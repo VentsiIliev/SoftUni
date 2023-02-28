@@ -23,20 +23,18 @@ public class RockPaperScissors {
         String userChoice = "";
         if (userInput == 0) {
             userChoice = "Rock";
-            System.out.println("You chose Rock!");
         } else if (userInput == 1) {
             userChoice = "Paper";
-            System.out.println("You chose Paper!");
         } else {
             userChoice = "Scissors";
-            System.out.println("You chose Scissors!");
         }
+
+        System.out.printf("You chose %s!\n", userChoice);
 
         Random random = new Random();
         int randomNumber = random.nextInt(3);
 
         String computerMove = "";
-
         if (randomNumber == 0) {
             computerMove = "Rock";
         } else if (randomNumber == 1) {
